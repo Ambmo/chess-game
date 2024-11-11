@@ -1,0 +1,6 @@
+<button id="reset-button" style="display: none;" (click)="resetGame()">Create new game</button>
+<div class="chess-board-container">
+    <ngx-chess-board #board 
+    (moveChange)="onMove()" 
+    ></ngx-chess-board>
+</div>

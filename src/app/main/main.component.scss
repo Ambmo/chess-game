@@ -1,0 +1,57 @@
+.main-page {
+  // text-align: center; /* Center the heading */
+  background-color: #f9f9f9; /* Optional: Add a background color */
+  padding: 20px; /* Add some padding around the content */
+}
+
+/* Main container that holds the iframes */
+.main-container {
+  display: flex; /* Use flexbox to layout the child iframes */
+  justify-content: space-around; /* Distribute space around the iframes */
+  align-items: stretch; /* Stretch iframes to fill the container */
+  height: 85vh; /* Adjust height as needed */
+  width: 100%; /* Full width of the parent container */
+  overflow: hidden; /* Remove any overflow from the container */
+  padding: 0 20px;
+  margin: 20px 0; /* Add vertical margin for spacing */
+  box-sizing: border-box;
+}
+
+/* Styling for the iframes */
+.chess-iframe {
+  flex: 1; /* Allow the iframes to scale and share space equally */
+  width: 48%; /* Adjust width to leave space between iframes */
+  height: 100%; /* Full height of the parent container */
+  border: none; /* Remove borders from the iframes */
+  margin: 0 10px; /* Add horizontal margin between iframes */
+  overflow: hidden; /* Ensure no scrollbars within the iframe */
+  display: block; /* Block-level for better control */
+  max-width: 100%; /* Prevent iframe from exceeding container width */
+  max-height: 100%; /* Prevent iframe from exceeding container height */
+}
+
+.disabled {
+  pointer-events: none;  /* Prevent all interactions */
+  opacity: 0.5;  /* Optional: Adjust opacity to indicate disabled state */
+}
+
+
+/* Optional: Add media queries to ensure responsiveness */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Stack iframes vertically on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .chess-iframe {
+    width: 100%; /* Full width on smaller screens */
+    height: 300px; /* Fixed height for iframes on smaller screens */
+    margin: 10px 0; /* Add vertical margin between stacked iframes */
+  }
+}
+
+@media (max-width: 480px) {
+  .chess-iframe {
+    height: 250px; /* Further adjust height for very small screens */
+  }
+}

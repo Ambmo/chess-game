@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Ensures the body or root component takes full height and width */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling on the body */
+    box-sizing: border-box;
+    width: 100vw; /* Ensures padding and borders are included in total width/height */
+    height: 100vh;
+  }
+  
+  /* Apply flexbox to the root component or router-outlet container */
+//   router-outlet {
+//     display: flex;                /* Use flexbox for layout */
+//     justify-content: center;      /* Center child elements horizontally */
+//     align-items: center;          /* Center child elements vertically */
+//     height: 100vh;                /* Ensure full viewport height */
+//     width: 100vw;                 /* Ensure full viewport width */
+//     overflow: hidden;             /* Remove scrollbars */
+//   }
+  
+//   .main-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%;  /* Ensure it fills the full height of the parent */
+//     width: 100%;   /* Ensure it fills the full width of the parent */
+//     overflow: hidden; /* Prevent any content from overflowing */
+//     box-sizing: border-box;
+//   }
+  
+//   .chess-iframe {
+//     flex: 1;             /* Allow the iframes to scale and share space equally */
+//     width: 100%;         /* Full width of the parent container */
+//     height: 100%;        /* Full height of the parent container */
+//     border: none;        /* Remove borders from the iframes */
+//     margin: 0;           /* Remove any margins */
+//     overflow: hidden;    /* Ensure no scrollbars within the iframe */
+//     display: block;      /* Block-level for better control */
+//     max-width: 100%;     /* Prevent iframe from exceeding container width */
+//     max-height: 100%;    /* Prevent iframe from exceeding container height */
+//   }
+  
+//   /* Optional: Add media queries for responsiveness */
+//   @media (max-width: 768px) {
+//     .main-container {
+//       flex-direction: column; /* Stack iframes vertically on smaller screens */
+//     }
+  
+//     .chess-iframe {
+//       max-width: 100%;        /* Ensure iframes are responsive on mobile */
+//       max-height: 100%;       /* Prevent overflowing on small screens */
+//     }
+//   }
+  
+//   @media (max-width: 480px) {
+//     .chess-iframe {
+//       width: 100%;            /* Full width on small screens */
+//       height: 400px;          /* Fixed height for small screens */
+//     }
+//   }
+  

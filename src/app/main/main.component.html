@@ -1,0 +1,9 @@
+<div class="main-page">
+  <h2>Main Page</h2>
+  <div class="main-container">
+    <!-- <div class="chess-iframe"></div> -->
+    <header>Player 1</header><iframe [src]="iframe1Url" [ngClass]="{'disabled': isBlackTurn}" id="iframe1" class="chess-iframe"></iframe>
+    <header>Player 2</header><iframe [src]="iframe2Url" [ngClass]="{'disabled': isWhiteTurn}" id="iframe2" class="chess-iframe"></iframe>
+  </div>
+
+</div>
